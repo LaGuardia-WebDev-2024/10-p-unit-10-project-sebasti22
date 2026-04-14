@@ -6,11 +6,15 @@ var starTotal = 100;
 var planetXPos = [];
 var planetYPos = [];
 var planet = "🌻";
-var planetTotal = 3;
+var planetTotal = 8;
 var planetFound = 0;
 
 setup = function() {
    size(600, 450); 
+   background(255,255,255);
+
+   
+
 
    reset();
 }
@@ -24,6 +28,18 @@ draw = function(){
    }
 
   display();
+  var myEmojis = ["🌝", "🌕", "🔆", "🐆", "💫"];
+
+   fill(255, 0, 0);
+   text(myEmojis[0], 10, 30);
+   text(myEmojis[1], 10, 80);
+   text(myEmojis[2], 10, 130);
+   text(myEmojis[3], 10, 180);
+   text(myEmojis[4], 10, 230);
+   //text(myEmojis[5], 10, 280);
+
+  textSize(30);
+  text("Secret emojis! " + myEmojis.length + " Guess where they are!" 10, 300);
 }
 
 
